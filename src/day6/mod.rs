@@ -10,6 +10,7 @@ fn part2(){
         .lines()
         .for_each(|st| {
             let inst: Vec<&str> = st.split_whitespace().collect();
+
             let mut cords1: Vec<&str> = vec![];
             let mut cords2: Vec<&str> = vec![];
 
@@ -21,6 +22,7 @@ fn part2(){
                  cords1 = inst[1].split(',').collect::<Vec<&str>>();
                  cords2 = inst[3].split(',').collect::<Vec<&str>>();
             }
+
             let x1 = cords1[0].parse::<i32>().unwrap();
             let y1 = cords1[1].parse::<i32>().unwrap();
 
